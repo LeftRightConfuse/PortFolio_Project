@@ -252,7 +252,7 @@ export default function Home() {
                 <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <div className="ml-10 w-96 gap-5 px-5 py-2 rounded-full flex border border-white">
-                <p className='font-mono'>Progree</p>
+                <p className='font-mono'>Progress</p>
                 <div className="w-full bg-gray-700 rounded-full h-6 items-center">
                   <div
                     className="bg-green-500 h-6 rounded-full text-center font-mono"
