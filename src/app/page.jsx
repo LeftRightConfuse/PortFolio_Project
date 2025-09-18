@@ -178,7 +178,7 @@ export default function Home() {
                 <FiExternalLink className="w-4 h-4" />
                 <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <div className="ml-40 w-96 gap-5 px-5 py-2 rounded-full flex border border-white">
+              <div className="ml-10 w-96 gap-5 px-5 py-2 rounded-full flex border border-white">
                 <p className='font-mono'>Progress</p>
                 <div className="w-full bg-gray-700 rounded-full h-6 items-center">
                   <div
@@ -251,7 +251,7 @@ export default function Home() {
                 <FiExternalLink className="w-4 h-4" />
                 <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <div className="ml-40 w-96 gap-5 px-5 py-2 rounded-full flex border border-white">
+              <div className="ml-10 w-96 gap-5 px-5 py-2 rounded-full flex border border-white">
                 <p className='font-mono'>Progress</p>
                 <div className="w-full bg-gray-700 rounded-full h-6 items-center">
                   <div
