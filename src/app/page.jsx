@@ -170,11 +170,11 @@ export default function Home() {
                 GitHub
               </Link>
               <Link
-                href="https://youtu.be/dQw4w9WgXcQ?si=3x2QGMfIiYHhuqbx"
+                href="https://www.figma.com/design/iES6iQF3mBUbWM1Gw5PNwi/PROJECT-Room-Booking-System?node-id=0-1&t=7tcyvC24IUCLVg9i-1"
                 target="_blank"
                 className="font-mono ml-5 group inline-flex items-center gap-2 text-white font-medium relative"
               >
-                View project
+                View Figma
                 <FiExternalLink className="w-4 h-4" />
                 <span className="absolute left-0 -bottom-1 w-0 h-[1px] bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
@@ -224,17 +224,17 @@ export default function Home() {
               </span>
             </div>
             <p className="mt-5 text-gray-300 font-mono text-xl">
-              A web application that allows users to book classrooms, meeting rooms
+             An automated waste-sorting and rewards system that identifies trash types,
             </p>
             <p className="mt-3 text-gray-300 font-mono text-xl">
-              and laboratories. It features a user-friendly interface that simplifies
+              tracks user deposits, and awards points in real time. A Streamlit dashboard 
             </p>
             <p className="mt-3 text-gray-300 font-mono text-xl">
-              room selection and booking management.
+              visualizes users and per-category waste volumes from a PostgreSQL database.
             </p>
             <div className='mt-5 flex gap-5'>
               <Link
-                href="https://github.com/nnimkanSong/Project_Webapp.git"
+                href="https://github.com/LeftRightConfuse/Smartbin_Project.git"
                 target="_blank"
                 className="font-mono inline-flex items-center gap-2 px-5 py-2 rounded-full
                 border border-white text-white bg-transparent
@@ -243,7 +243,7 @@ export default function Home() {
                 GitHub
               </Link>
               <Link
-                href="https://youtu.be/dQw4w9WgXcQ?si=3x2QGMfIiYHhuqbx"
+                href="https://leftrightconfuse-smartbin-project-dashboarddashboard-app-dapkkk.streamlit.app/"
                 target="_blank"
                 className="font-mono ml-5 group inline-flex items-center gap-2 text-white font-medium relative"
               >
