@@ -1,4 +1,5 @@
 import Nav from "./components/Nav";
+import Footer from "./components/footer";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 import { BackgroundBeamsWithCollision } from "../components/ui/shadcn-io/background-beams-with-collision/index";
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <main className="content">
       <Nav />
-      <section className="flex h-screen w-full bg-gradient-to-r from-gray-950 via-gray-900 to-gray-800 py-10 px-10">
+      <section id="home" className="flex h-screen w-full bg-gradient-to-r from-gray-950 via-gray-900 to-gray-800 py-10 px-10">
         <div className="flex-1 flex flex-col justify-center">
           <div className="relative flex items-center">
             <p className="text-white font-mono text-6xl font-bold relative z-10 pl-20">
@@ -47,11 +48,22 @@ export default function Home() {
           />
         </div>
       </section>
-      <About />
 
-      <Projects />
+      <section id="about">
+        <About />
+      </section>
       
-      <Contacts />
+      <section id="projects">
+        <Projects />
+      </section>
+
+      <section id="contacts">
+        <Contacts />
+      </section>
+      <section className="w-full bg-gradient-to-r from-gray-950 via-gray-900 to-gray-800 ">
+        <Footer />
+      </section>
+      
     </main>
   );
 }
