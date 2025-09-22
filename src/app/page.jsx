@@ -24,11 +24,14 @@ export default function Home() {
             <div className="absolute left-37 top-27 xl:left-66 xl:top-30 w-1.5 h-1.5 xl:w-2.5 xl:h-2.5 bg-blue-500 rounded-full z-0"></div>
           </div>
 
-          <div className="flex items-center mt-10">
-            <p className="text-blue-500 text-2xl xl:text-4xl font-bold mr-5">______</p>
-            <p className="text-white font-mono text-3xl xl:text-5xl font-bold">
+          <div className="flex flex-row xl:flex-col items-center mt-10">
+            <div className="absolute ml-20 mt-12 xl:left-15 xl:top-88 w-25 h-1.5 xl:w-25 xl:h-1 bg-blue-500 z-0"></div>
+            <div>
+               <p className="text-white font-mono text-3xl xl:text-5xl xl:ml-5 font-bold">
               I'm Chisanupong
             </p>
+            </div>
+           
           </div>
 
           <p className="text-white font-mono text-4xl xl:text-6xl font-bold mt-10 pl-20">
