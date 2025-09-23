@@ -7,6 +7,7 @@ import { SparklesCore } from "../components/ui/shadcn-io/sparkles/index";
 import About from "../app/about/page";
 import Projects from "../app/projec/page";
 import Contacts from "../app/contacts/page";
+import Slider from "../app/components/Slider";
 
 export default function Home() {
   return (
@@ -37,15 +38,15 @@ export default function Home() {
             </p>
             <div
               aria-hidden
-              className="mx-auto xl:mx-0 h-[4px] w-28 sm:w-36 bg-blue-500 xl:ml-10 "
+              className="mx-auto xl:mx-0 h-[4px] w-28 sm:w-36 bg-blue-500 lg:ml-15 xl:ml-10 lg:w-20 xl:w-28"
             />
           </div>
 
-          <p className="text-white font-mono text-4xl md:text-5xl xl:text-6xl font-bold mt-10 xl:ml-20 xl:mt-10">
+          <p className="text-white font-mono text-4xl md:text-5xl xl:text-5xl 2xl:text-6xl font-bold mt-10 xl:ml-10 ">
             Fullstack Developer
           </p>
 
-          <p className="text-white font-mono text-2xl md:text-3xl xl:text-4xl mt-10 xl:ml-10 xl:mt-15" >
+          <p className="text-white font-mono text-2xl md:text-3xl xl:text-4xl mt-10 xl:ml-10 xl:mt-15">
             Welcome to my portfolio website!
           </p>
         </div>
@@ -54,7 +55,7 @@ export default function Home() {
           <img
             src="./profile.JPG"
             alt="Profile Picture"
-            className="w-[90%] md:w-[70%] xl:w-[60%] rounded-full object-cover shadow-lg mx-auto"
+            className="w-[90%] md:w-[60%] rounded-full object-cover shadow-lg mx-auto"
           />
         </div>
       </section>
