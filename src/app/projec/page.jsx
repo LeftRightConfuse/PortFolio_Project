@@ -26,10 +26,12 @@ function Page() {
           />
         </div>
 
-        <div className="mx-auto max-w-7xl px-8 lg:px-10 pb-24 space-y-16 sm:space-y-20">
+        <div className="mx-auto max-w-[1440px] px-8 lg:px-10 pb-24 space-y-16 sm:space-y-20">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center lg:gap-20 xl:gap-24">
             <div>
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-mono font-bold">Booking</h3>
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-mono font-bold">
+                Booking
+              </h3>
               <div className="mt-5 flex gap-3 overflow-x-auto whitespace-nowrap sm:flex-wrap sm:whitespace-normal">
                 {["MongoDB", "Express", "Node.js", "React"].map((s) => (
                   <span
@@ -41,7 +43,9 @@ function Page() {
                 ))}
               </div>
               <p className="mt-5 text-gray-300 font-mono text-base sm:text-lg lg:text-xl leading-relaxed">
-                A web application that allows users to book classrooms, meeting rooms, and laboratories. It features a user-friendly interface that simplifies room selection and booking management.
+                A web application that allows users to book classrooms, meeting
+                rooms, and laboratories. It features a user-friendly interface
+                that simplifies room selection and booking management.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-5">
                 <Link
@@ -63,7 +67,9 @@ function Page() {
                 <div className="flex items-center gap-3 rounded-full border border-white px-4 py-2">
                   <span className="font-mono text-sm">Progress</span>
                   <div className="h-5 w-56 lg:w-64 rounded-full bg-gray-700">
-                    <div className="h-5 w-[70%] rounded-full bg-green-500 text-center text-xs font-mono leading-5">70%</div>
+                    <div className="h-5 w-[70%] rounded-full bg-green-500 text-center text-xs font-mono leading-5">
+                      70%
+                    </div>
                   </div>
                 </div>
               </div>
@@ -86,7 +92,9 @@ function Page() {
               />
             </div>
             <div>
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-mono font-bold">Smartbin</h3>
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-mono font-bold">
+                Smartbin
+              </h3>
               <div className="mt-5 flex gap-3 overflow-x-auto whitespace-nowrap sm:flex-wrap sm:whitespace-normal">
                 {["Python", "Node.js", "Streamlit", "PostgreSQL"].map((s) => (
                   <span
@@ -98,7 +106,10 @@ function Page() {
                 ))}
               </div>
               <p className="mt-5 text-gray-300 font-mono text-base sm:text-lg lg:text-xl leading-relaxed">
-                An automated waste-sorting and rewards system that identifies trash types, tracks user deposits, and awards points in real time. A Streamlit dashboard visualizes users and per-category waste volumes from a PostgreSQL database.
+                An automated waste-sorting and rewards system that identifies
+                trash types, tracks user deposits, and awards points in real
+                time. A Streamlit dashboard visualizes users and per-category
+                waste volumes from a PostgreSQL database.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-5">
                 <Link
@@ -120,7 +131,9 @@ function Page() {
                 <div className="flex items-center gap-3 rounded-full border border-white px-4 py-2">
                   <span className="font-mono text-sm">Progress</span>
                   <div className="h-5 w-56 lg:w-64 rounded-full bg-gray-700">
-                    <div className="h-5 w-[60%] rounded-full bg-green-500 text-center text-xs font-mono leading-5">60%</div>
+                    <div className="h-5 w-[60%] rounded-full bg-green-500 text-center text-xs font-mono leading-5">
+                      60%
+                    </div>
                   </div>
                 </div>
               </div>
@@ -129,7 +142,9 @@ function Page() {
 
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center lg:gap-20 xl:gap-24">
             <div>
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-mono font-bold">CE Website</h3>
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-mono font-bold">
+                CE Website
+              </h3>
               <div className="mt-5 flex gap-3 overflow-x-auto whitespace-nowrap sm:flex-wrap sm:whitespace-normal">
                 {["HTML", "CSS", "JavaScript", "Python"].map((s) => (
                   <span
@@ -141,7 +156,10 @@ function Page() {
                 ))}
               </div>
               <p className="mt-5 text-gray-300 font-mono text-base sm:text-lg lg:text-xl leading-relaxed">
-                I worked with my classmates to create a department website that displays students. My role focused on Front-end development, where I built the UI for listing and presenting student details in a responsive, user-friendly way.
+                I worked with my classmates to create a department website that
+                displays students. My role focused on Front-end development,
+                where I built the UI for listing and presenting student details
+                in a responsive, user-friendly way.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-5">
                 <Link
@@ -154,7 +172,9 @@ function Page() {
                 <div className="flex items-center gap-3 rounded-full border border-white px-4 py-2">
                   <span className="font-mono text-sm">Progress</span>
                   <div className="h-5 w-56 lg:w-64 rounded-full bg-gray-700">
-                    <div className="h-5 w-full rounded-full bg-green-500 text-center text-xs font-mono leading-5">100%</div>
+                    <div className="h-5 w-full rounded-full bg-green-500 text-center text-xs font-mono leading-5">
+                      100%
+                    </div>
                   </div>
                 </div>
               </div>

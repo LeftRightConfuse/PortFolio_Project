@@ -9,7 +9,7 @@ function page() {
   return (
     <main className="w-full h-full bg-gradient-to-r from-gray-950 via-gray-900 to-gray-800">
       <BackgroundBeamsWithCollision>
-        <section className="flex flex-col items-center justify-center min-h-screen w-full bg-gradient-to-r " >
+        <section className="flex flex-col items-center justify-center min-h-screen w-full bg-gradient-to-r ">
           <div className=" flex items-center w-full max-w-6xl mx-auto ">
             <div
               className="flex-1 h-px"
@@ -29,7 +29,7 @@ function page() {
               }}
             ></div>
           </div>
-          <div className="flex flex-row items-center w-full max-w-6xl mx-auto gap-20 justify-between py-10">
+          <div className="flex flex-col xl:flex-row items-center w-full max-w-6xl mx-auto gap-20 justify-between py-10">
             <div className="flex w-1/2 flex-col gap-5 items-center justify-center">
               <div className="w-full max-w-2xl h-24 flex items-center justify-between rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 px-5 md:px-6 shadow-lg shadow-black/20 relative">
                 <div className="flex items-center gap-4">
@@ -198,7 +198,6 @@ function page() {
                   </div>
                 </div>
 
-                {/* ✅ กล่อง Map ปรับใหม่ให้ไม่ล้น */}
                 <div
                   className="w-full aspect-video
                 rounded-2xl overflow-hidden
