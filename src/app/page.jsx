@@ -71,9 +71,7 @@ export default function Home() {
       <section id="contacts">
         <Contacts />
       </section>
-      <section className="w-full bg-gradient-to-r from-gray-950 via-gray-900 to-gray-800 ">
-        <Footer />
-      </section>
+      <Footer />
     </main>
   );
 }

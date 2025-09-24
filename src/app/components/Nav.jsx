@@ -14,12 +14,10 @@ export default function Navbar() {
       "
     >
       <div className="flex items-center justify-between px-5 py-3">
-        {/* Logo */}
         <a href="/" className="text-lg font-bold tracking-wide text-white">
           Ch1sxnu
         </a>
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-6">
           {["Home", "About", "Projects", "Contacts"].map((item) => (
             <li key={item}>
@@ -38,7 +36,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* CTA Desktop */}
         <div className="hidden md:block">
           <a
             href="#get-started"
@@ -52,7 +49,6 @@ export default function Navbar() {
           </a>
         </div>
 
-        {/* Hamburger (Mobile) */}
         <button
           onClick={() => setOpen(!open)}
           className="
@@ -80,7 +76,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`md:hidden overflow-hidden transition-[max-height,opacity] duration-300 ${
           open ? "max-h-72 opacity-100" : "max-h-0 opacity-0"
