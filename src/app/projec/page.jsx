@@ -96,7 +96,7 @@ function Page() {
                 Smartbin
               </h3>
               <div className="mt-5 flex gap-3 overflow-x-auto whitespace-nowrap sm:flex-wrap sm:whitespace-normal">
-                {["Python", "Node.js", "Streamlit", "PostgreSQL"].map((s) => (
+                {["Python", "Node.js","Express", "Streamlit", "MongoDB"].map((s) => (
                   <span
                     key={s}
                     className="px-4 py-2 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg"
