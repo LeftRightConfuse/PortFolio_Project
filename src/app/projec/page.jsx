@@ -109,7 +109,7 @@ function Page() {
                 An automated waste-sorting and rewards system that identifies
                 trash types, tracks user deposits, and awards points in real
                 time. A Streamlit dashboard visualizes users and per-category
-                waste volumes from a PostgreSQL database.
+                waste volumes from a MongoDB database.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-5">
                 <Link
@@ -131,8 +131,8 @@ function Page() {
                 <div className="flex items-center gap-3 rounded-full border border-white px-4 py-2">
                   <span className="font-mono text-sm">Progress</span>
                   <div className="h-5 w-56 lg:w-64 rounded-full bg-gray-700">
-                    <div className="h-5 w-[60%] rounded-full bg-green-500 text-center text-xs font-mono leading-5">
-                      60%
+                    <div className="h-5 w-[100%] rounded-full bg-green-500 text-center text-xs font-mono leading-5">
+                      100%
                     </div>
                   </div>
                 </div>
