@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@mui/icons-material": "^7.3.2",
     "@mui/material": "^7.3.2",
     "@tsparticles/engine": "^3.9.1",

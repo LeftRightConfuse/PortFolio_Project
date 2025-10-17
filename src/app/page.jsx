@@ -8,6 +8,8 @@ import About from "../app/about/page";
 import Projects from "../app/projec/page";
 import Contacts from "../app/contacts/page";
 import Slider from "../app/components/Slider";
+import Started from "../app/Get_Started/page";
+import RevealOnScroll from "../app/components/TextEffects";
 
 export default function Home() {
   return (
@@ -21,9 +23,12 @@ export default function Home() {
       >
         <div className="flex-1 flex flex-col justify-center items-center xl:items-start">
           <div className="relative flex items-center justify-center xl:justify-start">
-            <p className="text-white mt-20 font-mono text-4xl md:text-5xl xl:text-6xl font-bold relative z-10 xl:pl-20">
-              Hello
-            </p>
+            <RevealOnScroll>
+              <p className="text-white mt-20 font-mono text-4xl md:text-5xl xl:text-6xl font-bold relative z-10 xl:pl-20">
+                Hello
+              </p>
+            </RevealOnScroll>
+
             <span
               aria-hidden
               className="pointer-events-none absolute left-28.5 top-27 -translate-x-1/2 -translate-y-[35%]
@@ -33,22 +38,28 @@ export default function Home() {
           </div>
 
           <div className="mt-10 w-full relative">
-            <p className="text-white font-mono text-3xl md:text-4xl xl:text-5xl font-bold xl:mr-20 ">
-              I'm Chisanupong
-            </p>
+            <RevealOnScroll>
+              <p className="text-white font-mono text-3xl md:text-4xl xl:text-5xl font-bold xl:mr-20 ">
+                I'm Chisanupong
+              </p>
+            </RevealOnScroll>
+
             <div
               aria-hidden
               className="mx-auto xl:mx-0 h-[4px] w-28 sm:w-36 bg-blue-500 lg:ml-15 xl:ml-10 lg:w-20 xl:w-28"
             />
           </div>
+          <RevealOnScroll>
+            <p className="text-white font-mono text-4xl md:text-5xl xl:text-5xl 2xl:text-6xl font-bold mt-10 xl:ml-10 ">
+              Fullstack Developer
+            </p>
+          </RevealOnScroll>
 
-          <p className="text-white font-mono text-4xl md:text-5xl xl:text-5xl 2xl:text-6xl font-bold mt-10 xl:ml-10 ">
-            Fullstack Developer
-          </p>
-
-          <p className="text-white font-mono text-2xl md:text-3xl xl:text-4xl mt-10 xl:ml-10 xl:mt-15">
-            Welcome to my portfolio website!
-          </p>
+          <RevealOnScroll>
+            <p className="text-white font-mono text-2xl md:text-3xl xl:text-4xl mt-10 xl:ml-10 xl:mt-15">
+              Welcome to my portfolio website!
+            </p>
+          </RevealOnScroll>
         </div>
 
         <div className="flex-1 flex justify-center items-center mt-10 xl:text-left xl:mt-15">

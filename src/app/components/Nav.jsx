@@ -38,7 +38,7 @@ export default function Navbar() {
 
         <div className="hidden md:block">
           <a
-            href="#get-started"
+            href="/Get_Started"
             className="
               rounded-xl border border-white/30 bg-white/10 px-4 py-2
               text-sm font-medium text-white shadow-sm
@@ -94,7 +94,7 @@ export default function Navbar() {
             </li>
           ))}
           <a
-            href="#get-started"
+            href="/Get_Started"
             className="
               mt-1 block rounded-xl border border-white/25 bg-white/10
               px-3 py-2 text-center text-sm font-medium text-white

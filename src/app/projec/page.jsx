@@ -30,7 +30,7 @@ function Page() {
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center lg:gap-20 xl:gap-24">
             <div>
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-mono font-bold">
-                Booking
+                Room Booking System
               </h3>
               <div className="mt-5 flex gap-3 overflow-x-auto whitespace-nowrap sm:flex-wrap sm:whitespace-normal">
                 {["MongoDB", "Express", "Node.js", "React"].map((s) => (
@@ -41,6 +41,24 @@ function Page() {
                     {s}
                   </span>
                 ))}
+                <span className=" flex flex-row items-center px-4 py-2 gap-1 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg">
+                  <div>
+                    <img
+                      className="w-6 h-6 rounded-xl"
+                      src="figmalogo.png"
+                      alt="Figma Logo"
+                    />
+                  </div>
+                  <div> <Link
+                    href="https://www.figma.com/design/iES6iQF3mBUbWM1Gw5PNwi/PROJECT-Room-Booking-System?node-id=0-1&t=kqsAV8TGO8uLtVNO-1"
+                    target="_blank"
+                  >
+                    Figma
+                    
+                  </Link></div>
+                  <div><FiExternalLink className="h-4 w-4" /></div>
+                 
+                </span>
               </div>
               <p className="mt-5 text-gray-300 font-mono text-base sm:text-lg lg:text-xl leading-relaxed">
                 A web application that allows users to book classrooms, meeting
@@ -56,19 +74,19 @@ function Page() {
                   GitHub
                 </Link>
                 <Link
-                  href="https://www.figma.com/design/iES6iQF3mBUbWM1Gw5PNwi/PROJECT-Room-Booking-System?node-id=0-1&t=7tcyvC24IUCLVg9i-1"
+                  href="https://www.kmitl-rbs.online/"
                   target="_blank"
                   className="font-mono group inline-flex items-center gap-2 relative"
                 >
-                  View Figma
+                  View project
                   <FiExternalLink className="h-4 w-4" />
                   <span className="absolute left-0 -bottom-1 h-px w-0 bg-blue-500 transition-all duration-300 group-hover:w-full" />
                 </Link>
                 <div className="flex items-center gap-3 rounded-full border border-white px-4 py-2">
                   <span className="font-mono text-sm">Progress</span>
-                  <div className="h-5 w-56 lg:w-64 rounded-full bg-gray-700">
-                    <div className="h-5 w-[70%] rounded-full bg-green-500 text-center text-xs font-mono leading-5">
-                      70%
+                  <div className="h-5 w-56 lg:w-50 rounded-full bg-gray-700">
+                    <div className="h-5 w-[90%] rounded-full bg-green-500 text-center text-xs font-mono leading-5">
+                      90%
                     </div>
                   </div>
                 </div>
@@ -76,7 +94,7 @@ function Page() {
             </div>
             <div className="order-first md:order-none flex justify-center">
               <img
-                src="./bookinglogin.png"
+                src="./booking.png"
                 alt="Booking login"
                 className="w-full max-w-md lg:max-w-xl rounded-3xl border border-white/20 bg-white/10 px-6 py-6 shadow-lg object-cover"
               />
@@ -96,14 +114,16 @@ function Page() {
                 Smartbin
               </h3>
               <div className="mt-5 flex gap-3 overflow-x-auto whitespace-nowrap sm:flex-wrap sm:whitespace-normal">
-                {["Python", "Node.js","Express", "Streamlit", "MongoDB"].map((s) => (
-                  <span
-                    key={s}
-                    className="px-4 py-2 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg"
-                  >
-                    {s}
-                  </span>
-                ))}
+                {["Python", "Node.js", "Express", "Streamlit", "MongoDB"].map(
+                  (s) => (
+                    <span
+                      key={s}
+                      className="px-4 py-2 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-lg"
+                    >
+                      {s}
+                    </span>
+                  )
+                )}
               </div>
               <p className="mt-5 text-gray-300 font-mono text-base sm:text-lg lg:text-xl leading-relaxed">
                 An automated waste-sorting and rewards system that identifies
@@ -130,7 +150,7 @@ function Page() {
                 </Link>
                 <div className="flex items-center gap-3 rounded-full border border-white px-4 py-2">
                   <span className="font-mono text-sm">Progress</span>
-                  <div className="h-5 w-56 lg:w-64 rounded-full bg-gray-700">
+                  <div className="h-5 w-56 lg:w-50 rounded-full bg-gray-700">
                     <div className="h-5 w-[100%] rounded-full bg-green-500 text-center text-xs font-mono leading-5">
                       100%
                     </div>
@@ -171,7 +191,7 @@ function Page() {
                 </Link>
                 <div className="flex items-center gap-3 rounded-full border border-white px-4 py-2">
                   <span className="font-mono text-sm">Progress</span>
-                  <div className="h-5 w-56 lg:w-64 rounded-full bg-gray-700">
+                  <div className="h-5 w-56 lg:w-50 rounded-full bg-gray-700">
                     <div className="h-5 w-full rounded-full bg-green-500 text-center text-xs font-mono leading-5">
                       100%
                     </div>
