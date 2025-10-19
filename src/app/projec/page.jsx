@@ -94,7 +94,7 @@ function Page() {
             </div>
             <div className="order-first md:order-none flex justify-center">
               <img
-                src="./booking.png"
+                src="./Booking.png"
                 alt="Booking login"
                 className="w-full max-w-md lg:max-w-xl rounded-3xl border border-white/20 bg-white/10 px-6 py-6 shadow-lg object-cover"
               />
