@@ -171,4 +171,17 @@
   }
 }
 .swiper-button-disabled { opacity: .5; pointer-events: none; }
+a,
+button {
+  outline: none !important;
+  box-shadow: none !important;
+}
 
+a:focus,
+a:focus-visible,
+button:focus,
+button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: inherit !important;
+}

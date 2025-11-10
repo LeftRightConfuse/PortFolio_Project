@@ -76,7 +76,7 @@ function page() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-mono font-bold text-center lg:text-left">
               About me
             </h2>
-            <p className="mt-6 text-gray-300 text-base sm:text-lg leading-relaxed text-center lg:text-left">
+            <p className="mt-6 text-gray-300 text-base sm:text-lg leading-relaxed text-center lg:text-left 2xl:text-xl">
               I started my journey as a developer by practicing HTML and CSS,
               which sparked my passion for web development. As I explored
               further, I experimented with projects and gradually advanced my

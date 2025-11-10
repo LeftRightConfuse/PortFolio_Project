@@ -1,18 +1,25 @@
 import React from "react";
-import RevealOnScroll from "../components/TextEffects";
+import Nav from "../components/Nav";
 function page() {
   return (
-    <div>
-      <RevealOnScroll>
-        <h2 className="text-4xl font-bold">ตารางห้องเรียนวันนี้</h2>
-      </RevealOnScroll>
+    <main>
+      <Nav />
+      <section className="min-h-screen w-screen flex ">
+        <div className="w-1/2 bg-[#444444] text-white p-6">
+          <div className="bg-[#2c2d2d] flex justify-center">
+            <img 
+            src="/Resume-Pic.JPG" 
+            alt="resume picture" 
+            className="w-100 max-h-min rounded-full border-white border-8 "  /> 
+          </div>
+        </div>
+        <div className="w-1/2">
+          <p>Hello</p>
+        </div>
+        
 
-      <RevealOnScroll once={false}>
-        <p className="text-gray-600 mt-3">
-          เมื่อเลื่อนมาถึง ข้อความนี้จะค่อย ๆ โผล่ขึ้นมาด้วย GSAP ✨
-        </p>
-      </RevealOnScroll>
-    </div>
+      </section>
+    </main>
   );
 }
 
