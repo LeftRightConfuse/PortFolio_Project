@@ -34,9 +34,7 @@ export default function Home() {
                        bg-gradient-to-r from-gray-950 via-gray-900 to-gray-800
                       text-center px-5 py-5"
           >
-
             <div className="lg:pl-25 flex-1 flex flex-col xl:items-start items-center justify-center">
-
               <div className="relative flex items-center justify-center xl:justify-start xl:items-start">
                 <motion.p
                   initial={{ opacity: 0, y: 30 }}
@@ -55,7 +53,6 @@ export default function Home() {
                 />
               </div>
 
-
               <div className="mt-10 w-full relative">
                 <motion.p
                   initial={{ opacity: 0, y: 30 }}
@@ -72,24 +69,28 @@ export default function Home() {
                 />
               </div>
 
-
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-                className="text-white font-mono text-4xl md:text-4.5xl xl:text-4.5xl 2xl:text-6xl font-bold mt-10 xl:ml-10"
+                className="text-white font-mono
+             text-3xl md:text-4xl xl:text-4xl 2xl:text-6xl
+             font-bold mt-8 xl:ml-10
+             min-h-[90px] md:min-h-[60px]
+             flex items-center justify-center xl:justify-start"
               >
-                <Typewriter
-                  words={["Fullstack Developer", "Computer Engineering"]}
-                  loop={true}
-                  cursor
-                  cursorStyle="|"
-                  typeSpeed={80}
-                  deleteSpeed={100}
-                  delaySpeed={2000}
-                />
+                <span className="block">
+                  <Typewriter
+                    words={["Fullstack Developer", "Computer Engineering"]}
+                    loop={true}
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={80}
+                    deleteSpeed={100}
+                    delaySpeed={2000}
+                  />
+                </span>
               </motion.h1>
-
 
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -130,7 +131,6 @@ export default function Home() {
               </motion.div>
             </div>
 
-
             <div className="flex-1 flex justify-start items-center mt-10 xl:text-left xl:mt-15 relative">
               <div
                 className="absolute w-[500px] h-[500px]
@@ -149,7 +149,6 @@ export default function Home() {
               />
             </div>
           </section>
-
 
           <section id="about">
             <About />
