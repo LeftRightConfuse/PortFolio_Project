@@ -42,7 +42,7 @@ const LoaderReveal: React.FC<LoaderRevealProps> = ({
     }
 
     const start = performance.now();
-    const duration = 1500; // ~2.5s
+    const duration = 1500;
     const tick = (t: number) => {
       const elapsed = t - start;
       const progress = Math.min(elapsed / duration, 1);
@@ -62,7 +62,6 @@ const LoaderReveal: React.FC<LoaderRevealProps> = ({
         ...(linesRef.current || []),
       ]);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const reveal = () => {
@@ -129,7 +128,7 @@ const LoaderReveal: React.FC<LoaderRevealProps> = ({
       </div>
 
       <style jsx>{`
-      /* รีเซ็ตระยะขอบ และกันสกอลล์ */
+
       :global(html, body, #__next) {
         margin: 0;
         padding: 0;
@@ -138,11 +137,11 @@ const LoaderReveal: React.FC<LoaderRevealProps> = ({
         background: ${bg};
       }
 
-      /* ครอบจอแบบจริง ๆ ไม่ง้อ vw/vh */
+
       .loaderContainer {
-        position: fixed;  /* <-- ปักติดหน้าจอ */
-        inset: 0;         /* <-- top/right/bottom/left = 0 */
-        width: 100%;      /* <-- พอใช้ inset แล้วไม่ต้อง 100vw */
+        position: fixed;  
+        inset: 0;        
+        width: 100%;    
         height: 100%;
         overflow: hidden;
         color: #fff;
@@ -157,7 +156,6 @@ const LoaderReveal: React.FC<LoaderRevealProps> = ({
         z-index: 3;
       }
 
-      /* เส้นกึ่งกลาง */
       .follow,
       .progress {
         position: absolute;
@@ -171,7 +169,6 @@ const LoaderReveal: React.FC<LoaderRevealProps> = ({
       .follow { z-index: 4; }
       .progress { background: #fff; transition: width 0.3s ease-out; }
 
-      /* % กลางจอ */
       .count {
         position: absolute;
         left: 50%;

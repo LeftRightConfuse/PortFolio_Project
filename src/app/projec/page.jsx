@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FiExternalLink } from "react-icons/fi";
 
-function Page() {
+export default function ProjectsSection() {
   return (
     <main>
       <section className="w-full bg-gradient-to-r from-gray-950 via-gray-900 to-gray-800 text-white">
@@ -26,7 +26,7 @@ function Page() {
           />
         </div>
 
-        <div className="mx-auto max-w-[1440px] px-8 lg:px-10 pb-24 space-y-16 sm:space-y-20">
+        <div className="mx-auto max-w-[1440px] px-8 lg:px-10 py-15 pb-24 space-y-16 sm:space-y-20">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center lg:gap-20 xl:gap-24">
             <div>
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-mono font-bold">
@@ -85,8 +85,8 @@ function Page() {
                 <div className="flex items-center gap-3 rounded-full border border-white px-4 py-2">
                   <span className="font-mono text-sm">Progress</span>
                   <div className="h-5 w-56 lg:w-50 rounded-full bg-gray-700">
-                    <div className="h-5 w-[90%] rounded-full bg-green-500 text-center text-xs font-mono leading-5">
-                      90%
+                    <div className="h-5 w-[100%] rounded-full bg-green-500 text-center text-xs font-mono leading-5">
+                      100%
                     </div>
                   </div>
                 </div>
@@ -212,5 +212,3 @@ function Page() {
     </main>
   );
 }
-
-export default Page;
