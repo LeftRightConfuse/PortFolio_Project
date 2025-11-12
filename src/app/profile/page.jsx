@@ -56,18 +56,19 @@ export default function ProfileSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-            className="text-gray-300 font-mono
+            className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-sky-400 font-mono
                        text-3xl md:text-4xl xl:text-4xl 2xl:text-6xl
                        font-bold mt-8 xl:ml-10
                        min-h-[90px] md:min-h-[60px]
                        flex items-center justify-center xl:justify-start"
           >
-            <span className="block">
+            <span className="block ">
               <Typewriter
                 words={["Fullstack Developer", "Computer Engineering"]}
                 loop={true}
                 cursor
                 cursorStyle="|"
+                cursorColor="#5eead4"
                 typeSpeed={80}
                 deleteSpeed={100}
                 delaySpeed={2000}

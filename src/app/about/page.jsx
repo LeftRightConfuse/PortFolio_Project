@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
@@ -9,48 +8,48 @@ import {
   FaReact,
   FaPython,
   FaGithub,
-  FaGitAlt, 
+  FaGitAlt,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiPostgresql,
+  SiMongodb,
   SiTailwindcss,
   SiExpress,
   SiMysql,
-  SiDocker, 
-  SiFigma, 
+  SiDocker,
+  SiFigma,
 } from "react-icons/si";
 
-
 const sectionFadeUp = {
-  hidden: { opacity: 0, y: 40 },
+  hidden: { opacity: 0, y: 60 },
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: "easeOut" },
+    transition: { duration: 0.9, ease: "easeOut" },
   },
 };
 
 const gridContainer = {
-  hidden: { opacity: 0, y: 40 },
+  hidden: { opacity: 0, y: 60 },
   show: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.45,
+      duration: 0.8,
       ease: "easeOut",
-      staggerChildren: 0.08,
+      staggerChildren: 0.15,
     },
   },
 };
 
 const gridItem = {
-  hidden: { opacity: 0, y: 24, scale: 0.96 },
+  hidden: { opacity: 0, y: 28, scale: 0.96 },
   show: {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.35, ease: "easeOut" },
+    transition: { duration: 0.6, ease: "easeOut" },
   },
 };
 
@@ -60,54 +59,12 @@ const CATEGORIES = [
     label: "Frontend",
     description: "Focus on front-end development, UI/UX, and user experience",
     skills: [
-      {
-        name: "HTML5",
-        icon: FaHtml5,
-        color: "#E44D26",
-        level: "Advanced",
-        percent: 90,
-        tags: ["Semantic", "SEO", "Accessible"],
-      },
-      {
-        name: "CSS3",
-        icon: FaCss3Alt,
-        color: "#1572B6",
-        level: "Advanced",
-        percent: 85,
-        tags: ["Responsive", "Flex/Grid", "Animation"],
-      },
-      {
-        name: "Tailwind CSS",
-        icon: SiTailwindcss,
-        color: "#38BDF8",
-        level: "Advanced",
-        percent: 85,
-        tags: ["Utility-first", "Responsive", "Dark Mode"],
-      },
-      {
-        name: "JavaScript (ES6+)",
-        icon: FaJs,
-        color: "#F7DF1E",
-        level: "Intermediate",
-        percent: 80,
-        tags: ["Async", "DOM", "API"],
-      },
-      {
-        name: "React",
-        icon: FaReact,
-        color: "#61DAFB",
-        level: "Intermediate",
-        percent: 80,
-        tags: ["Hooks", "Components", "State"],
-      },
-      {
-        name: "Next.js",
-        icon: SiNextdotjs,
-        color: "#ffffff",
-        level: "Intermediate",
-        percent: 75,
-        tags: ["App Router", "SSR", "API Route"],
-      },
+      { name: "HTML5", icon: FaHtml5, color: "#E44D26" },
+      { name: "CSS3", icon: FaCss3Alt, color: "#1572B6" },
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38BDF8" },
+      { name: "JavaScript (ES6+)", icon: FaJs, color: "#F7DF1E" },
+      { name: "React", icon: FaReact, color: "#61DAFB" },
+      { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" },
     ],
   },
   {
@@ -115,46 +72,12 @@ const CATEGORIES = [
     label: "Backend",
     description: "Design API, database, and business logic",
     skills: [
-      {
-        name: "Node.js",
-        icon: FaJs,
-        color: "#3C873A",
-        level: "Intermediate",
-        percent: 70,
-        tags: ["REST API", "Express", "Middleware"],
-      },
-      {
-        name: "Express.js",
-        icon: SiExpress,
-        color: "#ffffff",
-        level: "Intermediate",
-        percent: 70,
-        tags: ["Routing", "Middleware", "REST API"],
-      },
-      {
-        name: "Python",
-        icon: FaPython,
-        color: "#3776AB",
-        level: "Intermediate",
-        percent: 70,
-        tags: ["Scripting", "Data", "Automation"],
-      },
-      {
-        name: "PostgreSQL / SQL",
-        icon: SiPostgresql,
-        color: "#336791",
-        level: "Intermediate",
-        percent: 65,
-        tags: ["Query", "ER-Diagram", "Index"],
-      },
-      {
-        name: "MySQL / SQL",
-        icon: SiMysql,
-        color: "#4479A1",
-        level: "Intermediate",
-        percent: 60,
-        tags: ["Relational", "Query", "Index"],
-      },
+      { name: "Node.js", icon: FaJs, color: "#3C873A" },
+      { name: "Express.js", icon: SiExpress, color: "#ffffff" },
+      { name: "Python", icon: FaPython, color: "#3776AB" },
+      { name: "PostgreSQL / SQL", icon: SiPostgresql, color: "#336791" },
+      { name: "MySQL / SQL", icon: SiMysql, color: "#4479A1" },
+      { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
     ],
   },
   {
@@ -162,55 +85,18 @@ const CATEGORIES = [
     label: "Tools",
     description: "Tools used in real workflow",
     skills: [
-      {
-        name: "Git",
-        icon: FaGitAlt,
-        color: "#F05033",
-        level: "Intermediate",
-        percent: 75,
-        tags: ["Branching", "Merge", "Rebase"],
-      },
-      {
-        name: "GitHub",
-        icon: FaGithub,
-        color: "#ffffff",
-        level: "Intermediate",
-        percent: 75,
-        tags: ["PR", "Issues", "Actions"],
-      },
-      {
-        name: "Docker",
-        icon: SiDocker,
-        color: "#2496ED",
-        level: "Intermediate",
-        percent: 65,
-        tags: ["Container", "Images", "Compose"],
-      },
-      {
-        name: "Figma",
-        icon: SiFigma,
-        color: "#F24E1E",
-        level: "Intermediate",
-        percent: 60,
-        tags: ["UI Design", "Prototype", "Components"],
-      },
-      {
-        name: "VS Code",
-        icon: FaJs,
-        color: "#007ACC",
-        level: "Daily Driver",
-        percent: 85,
-        tags: ["Extensions", "Debug", "Terminal"],
-      },
+      { name: "Git", icon: FaGitAlt, color: "#F05033" },
+      { name: "GitHub", icon: FaGithub, color: "#ffffff" },
+      { name: "Docker", icon: SiDocker, color: "#2496ED" },
+      { name: "Figma", icon: SiFigma, color: "#F24E1E" },
+      { name: "VS Code", icon: FaJs, color: "#007ACC" },
     ],
   },
 ];
 
 export default function SkillsSection() {
   const [active, setActive] = useState("frontend");
-
-  const currentCategory =
-    CATEGORIES.find((c) => c.id === active) ?? CATEGORIES[0];
+  const currentCategory = CATEGORIES.find((c) => c.id === active) ?? CATEGORIES[0];
 
   return (
     <section
@@ -222,7 +108,7 @@ export default function SkillsSection() {
         variants={sectionFadeUp}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.7 }}
       >
         <div className="flex w-full items-center gap-6">
           <div
@@ -250,8 +136,7 @@ export default function SkillsSection() {
         <p className="pt-10 text-xs sm:text-sm md:text-xl text-slate-300/80 text-center leading-relaxed">
           I&apos;m currently studying in my 3rd year at
           <br className="hidden sm:block" />
-          King Mongkut&apos;s Institute of Technology Ladkrabang, Chumphon
-          Campus
+          King Mongkut&apos;s Institute of Technology Ladkrabang, Chumphon Campus
           <br className="hidden sm:block" />
           <span className="text-emerald-300 font-medium block">
             Bachelor of Engineering Program in Computer Engineering
@@ -267,18 +152,16 @@ export default function SkillsSection() {
           variants={sectionFadeUp}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.6 }}
         >
-          <p className="text-sm md:text-base uppercase tracking-[0.25em] text-emerald-300/80">
+          <p className="text-xl md:text-2xl uppercase tracking-[0.25em] text-emerald-300/80">
             SKILLS & STACK
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-200">
             Technologies I use regularly
           </h2>
           <p className="text-sm md:text-base text-slate-300/80 max-w-2xl mx-auto">
-            Here are the tools and technologies I use most often in my projects
-            — from front-end frameworks to back-end systems and deployment
-            platforms.
+            Here are the tools and technologies I use most often in my projects — from front-end frameworks to back-end systems and deployment platforms.
           </p>
         </motion.div>
 
@@ -287,15 +170,14 @@ export default function SkillsSection() {
           variants={sectionFadeUp}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.6 }}
         >
           <div className="inline-flex items-center gap-2 p-1 rounded-full bg-slate-900/80 border border-slate-700/60 backdrop-blur-md">
             {CATEGORIES.map((cat) => (
               <button
                 key={cat.id}
                 onClick={() => setActive(cat.id)}
-                className={`relative px-4 md:px-6 py-2 text-xs md:text-sm rounded-full transition-all duration-200 
-                ${
+                className={`relative px-4 md:px-6 py-2 text-xs md:text-sm rounded-full transition-all duration-200 ${
                   active === cat.id
                     ? "bg-gradient-to-r from-emerald-400 to-sky-400 text-slate-900 shadow-lg shadow-emerald-500/30"
                     : "text-slate-300 hover:text-white hover:bg-slate-800/80"
@@ -312,7 +194,7 @@ export default function SkillsSection() {
           variants={sectionFadeUp}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.6 }}
         >
           <h3 className="text-lg md:text-xl font-semibold text-emerald-300 mb-1">
             {currentCategory.label}
@@ -327,7 +209,7 @@ export default function SkillsSection() {
           variants={gridContainer}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
         >
           {currentCategory.skills.map((skill) => {
@@ -341,7 +223,6 @@ export default function SkillsSection() {
                 className="relative group rounded-2xl border border-slate-700/70 bg-slate-900/70 backdrop-blur-xl p-4 md:p-5 shadow-[0_18px_50px_rgba(15,23,42,0.9)] flex flex-col items-center justify-center"
               >
                 <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-emerald-500/15 via-sky-500/10 to-transparent" />
-
                 <div className="relative flex flex-col items-center gap-3">
                   <div className="flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-2xl bg-slate-900/90 border border-slate-700/80 shadow-lg">
                     <Icon
