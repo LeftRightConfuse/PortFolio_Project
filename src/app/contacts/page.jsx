@@ -211,7 +211,7 @@ function Page() {
               href="mailto:66200059@kmitl.ac.th"
               className="group flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-3 py-2.5 hover:border-emerald-400/70 hover:bg-white/10 transition-colors"
             >
-              <span className="flex h-1  w-10 items-center justify-center rounded-full bg-white/10 text-emerald-300 group-hover:bg-emerald-400/20">
+              <span className="flex h-10  w-10 items-center justify-center rounded-full bg-white/10 text-emerald-300 group-hover:bg-emerald-400/20">
                 <FiMail className="text-lg" />
               </span>
               <span className="flex flex-col">
