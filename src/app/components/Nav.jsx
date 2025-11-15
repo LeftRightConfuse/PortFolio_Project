@@ -59,7 +59,7 @@ export default function Navbar() {
 
         <div className="hidden md:block">
           <a
-            href="/Get_Started"
+            href="/profile"
             className="
               rounded-xl border border-white/30 bg-white/10 px-4 py-2
               text-sm font-medium text-white shadow-sm
