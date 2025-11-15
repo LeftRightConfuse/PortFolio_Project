@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import useSectionVisible from "../hooks/useSectionVisible";
@@ -18,8 +19,26 @@ const navVariants = {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-
   const contactVisible = useSectionVisible("contacts", 0.4);
+
+
+  const handleGetStarted = async () => {
+  const sections = ["about", "projects", "contacts"];
+  const delay = (ms) =>
+  new Promise((res) => setTimeout(res, ms));
+
+
+
+  for (const id of sections) {
+    const el = document.getElementById(id);
+    if (!el) continue;
+
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    await delay(4000);
+  }
+};
+
 
   return (
     <motion.nav
@@ -34,7 +53,7 @@ export default function Navbar() {
       animate={contactVisible ? "hidden" : "visible"}
     >
       <div className="flex items-center justify-between px-5 py-3">
-        <a href="/" className="text-lg font-bold tracking-wide text-white">
+        <a href="#home" className="text-lg font-bold tracking-wide text-white">
           Ch1sxnu
         </a>
 
@@ -58,8 +77,8 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden md:block">
-          <a
-            href="/profile"
+          <button
+            onClick={handleGetStarted}
             className="
               rounded-xl border border-white/30 bg-white/10 px-4 py-2
               text-sm font-medium text-white shadow-sm
@@ -67,7 +86,7 @@ export default function Navbar() {
             "
           >
             Get Started
-          </a>
+          </button>
         </div>
 
         <button
@@ -114,16 +133,20 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <a
-            href="/Get_Started"
+
+          <button
+            onClick={(e) => {
+              setOpen(false);
+              handleGetStarted(e);
+            }}
             className="
-              mt-1 block rounded-xl border border-white/25 bg-white/10
+              mt-1 block w-full rounded-xl border border-white/25 bg-white/10
               px-3 py-2 text-center text-sm font-medium text-white
               hover:bg-white/20
             "
           >
             Get Started
-          </a>
+          </button>
         </ul>
       </div>
     </motion.nav>

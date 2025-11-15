@@ -7,7 +7,6 @@ import {
   FiLinkedin,
   FiInstagram,
   FiFacebook,
-  FiDribbble,
   FiPhone,
   FiMail,
 } from "react-icons/fi";
@@ -102,6 +101,66 @@ function Page() {
           </motion.div>
         </div>
 
+        <div className="md:hidden w-full px-4 sm:px-6 pb-10 space-y-6">
+          <div className="space-y-3">
+            <p className="text-[11px] uppercase tracking-[0.25em] text-white/60">
+              Contact
+            </p>
+
+            <a
+              href="tel:0969290002"
+              className="group flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-3 py-2.5 hover:border-sky-400/70 hover:bg-white/10 transition-colors"
+            >
+              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-sky-300 group-hover:bg-sky-400/20">
+                <FiPhone className="text-lg" />
+              </span>
+              <span className="flex flex-col">
+                <span className="text-[13px] uppercase tracking-[0.1em] text-white/50">
+                  Phone
+                </span>
+                <span className="text-[14px] font-medium text-white/90">
+                  096-929-0002
+                </span>
+              </span>
+            </a>
+
+            <a
+              href="mailto:66200059@kmitl.ac.th"
+              className="group flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-3 py-2.5 hover:border-emerald-400/70 hover:bg-white/10 transition-colors"
+            >
+              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-emerald-300 group-hover:bg-emerald-400/20">
+                <FiMail className="text-lg" />
+              </span>
+              <span className="flex flex-col">
+                <span className="text-[13px] uppercase tracking-[0.1em] text-white/50">
+                  Email
+                </span>
+                <span className="text-[14px] font-medium text-white/90 break-all">
+                  66200059@kmitl.ac.th
+                </span>
+              </span>
+            </a>
+          </div>
+
+          <div className="space-y-3 text-[11px] tracking-[0.25em] uppercase">
+            <p className="text-white/60">Follow</p>
+            <div className="flex items-center gap-4 text-[20px]">
+              <Link href="https://github.com/LeftRightConfuse" className="hover:text-white/80">
+                <FiGithub />
+              </Link>
+              <Link href="https://www.linkedin.com/in/cchisanupong-non-015116386/" className="hover:text-white/80">
+                <FiLinkedin />
+              </Link>
+              <Link href="https://www.instagram.com/ch1sxnu/" className="hover:text-white/80">
+                <FiInstagram />
+              </Link>
+              <Link href="https://www.facebook.com/mickeynon2580" className="hover:text-white/80">
+                <FiFacebook />
+              </Link>
+            </div>
+          </div>
+        </div>
+
         <motion.aside
           className="hidden md:flex w-full md:w-[260px] lg:w-[300px] border-t md:border-t-0 md:border-l border-white/20 flex-col justify-between py-6 md:py-10 px-6 md:px-8"
           variants={sideIn}
@@ -132,6 +191,7 @@ function Page() {
 
           <div className="mt-8 mb-8 space-y-3">
             <a
+              href="tel:0969290002"
               className="group flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-3 py-2.5 hover:border-sky-400/70 hover:bg-white/10 transition-colors"
             >
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-sky-300 group-hover:bg-sky-400/20">
@@ -148,9 +208,10 @@ function Page() {
             </a>
 
             <a
+              href="mailto:66200059@kmitl.ac.th"
               className="group flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-3 py-2.5 hover:border-emerald-400/70 hover:bg-white/10 transition-colors"
             >
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-emerald-300 group-hover:bg-emerald-400/20">
+              <span className="flex h-1  w-10 items-center justify-center rounded-full bg-white/10 text-emerald-300 group-hover:bg-emerald-400/20">
                 <FiMail className="text-lg" />
               </span>
               <span className="flex flex-col">
