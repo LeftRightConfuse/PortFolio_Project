@@ -1,22 +1,43 @@
 "use client";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import useSectionVisible from "../hooks/useSectionVisible";
+
+const navVariants = {
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+  hidden: {
+    opacity: 0,
+    y: -60,
+    transition: { duration: 0.5, ease: "easeIn" },
+  },
+};
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const contactVisible = useSectionVisible("contacts", 0.4);
+
   return (
-    <nav
+    <motion.nav
       className="
         fixed top-5 left-1/2 z-50 w-[92%] max-w-5xl -translate-x-1/2
         rounded-2xl border border-white/20
         bg-white/10 backdrop-blur-xl
         shadow-[0_8px_32px_rgba(0,0,0,0.35)]
       "
+      variants={navVariants}
+      initial="visible"
+      animate={contactVisible ? "hidden" : "visible"}
     >
       <div className="flex items-center justify-between px-5 py-3">
         <a href="/" className="text-lg font-bold tracking-wide text-white">
           Ch1sxnu
         </a>
+
 
         <ul className="hidden md:flex items-center gap-6">
           {["Home", "About", "Projects", "Contacts"].map((item) => (
@@ -105,6 +126,6 @@ export default function Navbar() {
           </a>
         </ul>
       </div>
-    </nav>
+    </motion.nav>
   );
 }

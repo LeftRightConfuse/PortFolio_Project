@@ -26,9 +26,10 @@ export default function ProjectsSection() {
                 "linear-gradient(90deg, rgba(149,131,198,0) 1.46%, rgba(149,131,198,.6) 40.83%, rgba(149,131,198,.3) 65.57%, rgba(149,131,198,0) 107.92%)",
             }}
           />
-          <span className="px-3 text-4xl sm:text-5xl lg:text-6xl font-mono font-bold">
+          <div className="flex flex-col md:flex-row items-center gap-2"><span className="px-3 text-4xl sm:text-5xl lg:text-6xl font-mono font-bold">
             Featured</span> <span className="px-3 text-4xl sm:text-5xl lg:text-6xl font-mono font-bold text-emerald-400">Projects
-          </span>
+          </span></div>
+          
           <div
             className="h-px flex-1"
             style={{

@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 
-import Footer from "./components/footer";
 import Profile from "./profile/page";
 import About from "../app/about/page";
 import Projects from "../app/projec/page";
@@ -42,7 +41,6 @@ export default function Home() {
             <Contacts />
           </section>
 
-          <Footer />
         </main>
       )}
     </>
